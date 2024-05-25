@@ -47,17 +47,3 @@ export function app(): express.Express {
 
   return server;
 }
-
-function run(): void {
-  const port = process.env['PORT'] || 4000;
-  const server = express();
-
-  server.use(`/${lang}`, app());
-
-  // Start up the Node server
-  server.listen(port, () => {
-    console.log(`Node Express server listening on http://localhost:${port}/pt`);
-  });
-}
-
-run();

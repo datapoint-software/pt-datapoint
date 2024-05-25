@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build && node tasks/generate-server-mjs",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "serve:ssr:datapoint": "node dist/datapoint/server/server.mjs"
