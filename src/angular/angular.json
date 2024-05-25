@@ -43,7 +43,6 @@
           },
           "configurations": {
             "production": {
-              "localize": true,
               "budgets": [
                 {
                   "type": "initial",
@@ -63,9 +62,8 @@
               "extractLicenses": false,
               "sourceMap": true
             },
-            "pt": {
-              "localize": [ "pt" ]
-            }
+            "lc-all": { "localize": true },
+            "lc-pt": { "localize": [ "pt" ] }
           },
           "defaultConfiguration": "production"
         },
@@ -110,7 +108,7 @@
         }
       },
       "i18n": {
-        "sourceLocale": "en-US",
+        "sourceLocale": "en",
         "locales": {
           "pt": "src/app/messages/messages.pt.json"
         }
