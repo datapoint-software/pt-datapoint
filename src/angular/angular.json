@@ -112,7 +112,7 @@
       "i18n": {
         "sourceLocale": "en-US",
         "locales": {
-          "pt": "src/messages/messages.pt.xlf"
+          "pt": "src/app/messages/messages.pt.json"
         }
       }
     }
