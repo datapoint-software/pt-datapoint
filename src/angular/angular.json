@@ -17,6 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
+            "localize": true,
             "outputPath": "dist/datapoint",
             "index": "src/index.html",
             "browser": "src/main.ts",
@@ -63,7 +64,8 @@
               "sourceMap": true
             },
             "lc-all": { "localize": true },
-            "lc-pt": { "localize": [ "pt" ] }
+            "lc-en": { "localize": [ "en" ], "baseHref": "/en/" },
+            "lc-pt": { "localize": [ "pt" ], "baseHref": "/pt/" }
           },
           "defaultConfiguration": "production"
         },
@@ -74,10 +76,10 @@
               "buildTarget": "datapoint:build:production"
             },
             "development": {
-              "buildTarget": "datapoint:build:development"
+              "buildTarget": "datapoint:build:development,lc-en"
             },
             "development-pt": {
-              "buildTarget": "datapoint:build:development,pt"
+              "buildTarget": "datapoint:build:development,lc-pt"
             }
           },
           "defaultConfiguration": "development"
@@ -110,7 +112,10 @@
       "i18n": {
         "sourceLocale": "en",
         "locales": {
-          "pt": "src/app/messages/messages.pt.json"
+          "pt": {
+            "baseHref": "/pt/",
+            "translation": "src/app/messages/messages.pt.json"
+          }
         }
       }
     }
