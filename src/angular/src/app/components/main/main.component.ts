@@ -3,10 +3,10 @@ import { RouterLink, RouterOutlet } from "@angular/router";
 
 @Component({
   imports: [ RouterLink, RouterOutlet ],
-  selector: 'app-fe',
+  selector: 'app-main',
   standalone: true,
-  templateUrl: './fe.component.html'
+  templateUrl: './main.component.html'
 })
-export class FeComponent {
+export class MainComponent {
 
 }

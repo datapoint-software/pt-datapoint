@@ -1,17 +1,17 @@
 import { Routes } from '@angular/router';
-import { FeComponent } from './components/fe/fe.component';
-import { FeHomeComponent } from './components/fe/home/fe-home.component';
+import { MainComponent } from './components/main/main.component';
+import { MainHomeComponent } from './components/main-home/main-home.component';
 
 export const routes: Routes = [
   {
     path: '',
     pathMatch: 'full',
-    component: FeComponent,
+    component: MainComponent,
     children: [
       {
         path: '',
         pathMatch: 'full',
-        component: FeHomeComponent
+        component: MainHomeComponent
       }
     ]
   }
